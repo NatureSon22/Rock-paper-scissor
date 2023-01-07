@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Watermelon</title>
+        <link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/ce744f4aea.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="bg">
+            <div class="main-game">
+                <div id="game">
+                    <h1 id="title">Rock, Paper, Scissors</h1>
+                    <h3 id="direction">First to score three will win the game</h3>
+                    
+                    <!--Score and hand-->
+                    <div class="pointer-section">
+                        <div class="left-section">
+                            <!--left-section-->
+                            <div class="info-player">
+                                <h2 id="name" class="player" onclick="setName()"> YOU </h2>
+                                <span id="user-score" class="score">0</span>
+                            </div>
+                            <div class="image">
+                                <img id="user-choice">
+                            </div>
+                        </div>
+                        
+                        <div class="right-section">
+                            <!--right-section-->
+                            <div class="info-player">
+                                <h2 class="player"> COMPUTER </h2>
+                                <span id="comp-score" class="score">0</span>
+                            </div>
+                            <div class="image">
+                                <img id="comp-choice">
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="options">
+                        <button class="option" onclick="scorer(1)"><i class="fa-solid fa-hand-back-fist"></i></button>
+                        <button class="option"  onclick="scorer(2)"><i class="fa-solid fa-hand"></i></button> 
+                        <button class="option"  onclick="scorer(3)"><i class="fa-solid fa-hand-scissors"></i></button>
+                    </div>
+               </div>
+
+                <div id="message" class="message">
+                    <div id="badge">
+                        <img id="badge-image">
+                    </div>
+    
+                    <h2 id="result">CONGRATULATIONS!</h2>
+                    <h4 id="result_next">You win</h4>
+                    <button type="button" id="play_again" onclick="playAgain()">Play Again</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
